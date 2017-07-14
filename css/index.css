@@ -7,7 +7,11 @@ body {
 	color:white;
 }
 
-#header-container .container-fluid {
+.row{
+	border: 1px solid blue;
+}
+
+.columna {
 	border: 1px solid red;
 }
 
