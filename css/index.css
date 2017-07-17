@@ -3,9 +3,40 @@ body {
 }
 
 #header-container {
-	background: #89c84a;
+	background: #99c84a;
 	color:white;
 }
 
 
 
+#menu-container {
+	font-family: 'Monserrat', sans-serif;
+	background-color: #f7f7f9;
+}	
+
+.navbar-nav {
+	font-family: 'Monserrat', sans-serif;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+
+}
+
+
+.btn-platzi {
+	background-color: #99c84a; 
+	color:white;
+}
+
+.btn-platzi:hover {
+	background-color: #8ab542; 
+}
+
+.form-control {
+	margin-bottom: 3px;
+}
+
+input .form-control:focus {
+	border-color: 1px solid #99c84a;
+
+}
