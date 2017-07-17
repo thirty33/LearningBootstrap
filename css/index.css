@@ -2,6 +2,10 @@ body {
 	font-family: 'Monserrat', sans-serif;
 }
 
+.row {
+	width: 100%;
+}
+
 #header-container {
 	background: #99c84a;
 	color:white;
@@ -26,17 +30,50 @@ body {
 .btn-platzi {
 	background-color: #99c84a; 
 	color:white;
+	/*position: relative;*/
 }
 
 .btn-platzi:hover {
 	background-color: #8ab542; 
 }
 
-.form-control {
-	margin-bottom: 3px;
+.form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 }
 
-input .form-control:focus {
+.form-control {
+	margin-bottom: 3px;
+
+}
+
+input.form-control:focus {
 	border-color: 1px solid #99c84a;
 
 }
+
+.login,
+#header-container .navbar-toggler {
+	color: white;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+	.mostrar {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.mostrar {
+		display: block !important;
+	}
+}
+
+
+
