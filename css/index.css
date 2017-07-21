@@ -6,8 +6,9 @@ body {
 	width: 100%;
 }
 
-#header-container {
-	background: #99c84a;
+#header-container,
+#info-container {
+	background: #7BDA3A;
 	color:white;
 }
 
@@ -29,7 +30,7 @@ body {
 
 
 .btn-platzi {
-	background-color: #99c84a; 
+	background-color: #7BDA3A; 
 	color:white;
 	/*position: relative;*/
 }
@@ -90,10 +91,27 @@ input.form-control:focus {
 }  
 
 
+#info-container h4 {
+	margin:1em 0;
+}
+
+
+#info-container img {
+	margin-top: 0 auto;
+	margin-top: 2em;
+	height: 200px;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 	.mostrar {
 		display: none !important;
+	}
+
+	.right {
+		padding-top: 15px;
 	}
 }
 
@@ -101,6 +119,12 @@ input.form-control:focus {
 	.mostrar {
 		display: block !important;
 	}
+	
+	.right {
+	    padding-top: 10px;
+	    padding-right: 0;
+	}
+
 }
 
 
