@@ -47,10 +47,10 @@
 
 							<ul  class="navbar-nav mr-auto align-self-start">
 								<li class="nav-item text-center">
-									<a href="index.html" class="nav-link active">Home<span class="sr-only">(current)</span></a>
+									<a href="index.html" class="nav-link ">Home<span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item text-center">
-									<a href="catalogo.html" class="nav-link">Catálogo</a>
+									<a href="catalogo.html" class="nav-link active">Catálogo</a>
 								</li>
 								<li class="nav-item text-center">
 									<a href="" class="nav-link">Carrito</a>
@@ -91,70 +91,9 @@
 	</div>
 
 	<!-- /menu -->
-	<!-- carrousel -->
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner" role="listbox">
-	    <div class="item carousel-item active">
-	      <img class="d-block img-fluid mx-auto" src="images/colgate.jpg" alt="First slide">
-	       <div class="carousel-caption d-none d-md-block">
-		    <h3>Producto</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		  </div>
-	    </div>
-	    <div class="item carousel-item">
-	      <img class="d-block img-fluid mx-auto" src="images/colgate.jpg" alt="Second slide">
-	       <div class="carousel-caption d-none d-md-block">
-		    <h3>Producto</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		  </div>
-	    </div>
-	    <div class="item carousel-item">
-	      <img class="d-block img-fluid mx-auto" src="images/colgate.jpg" alt="Third slide">
-	       <div class="carousel-caption d-none d-md-block">
-		    <h3>Producto</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		  </div>
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
 
 
-	<!-- /arrousel -->
-
-	<!-- info -->
-
-	<div id="info-container">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-12 col-md-4">
-					<img src="images/calidad.png" alt="Calidad"  class="img-fluid">
-					<h4>Calidad</h4>
-				</div>
-				<div class="col-12 col-md-4">
-					<img src="images/envio.png" alt="Envio"  class="img-fluid">
-					<h4>Envío gratis</h4>
-				</div>
-				<div class="col-12 col-md-4">
-					<img src="images/soporte.png" alt="Soporte"  class="img-fluid">
-					<h4>soporte 24hrs</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /info -->
+	
 
 	<!-- footer -->
 		<footer id="footer-container">
@@ -190,7 +129,34 @@
 		</footer>
 	<!-- /footer -->
 
+	<!-- modal -->
+	<div class="modal fade" id="modalOferta">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Oferta exclusiva</h4>
+					<button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					Registrate y recibe 15$ de descuento
+					<form action="#" class="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com" >
+							<small class="form-text text-muted">No compartiremos tu informacion a nadie más</small>
+							<button type="submit" class="btn btn-platzi form-text">Registrame</button>
+							<button id="btnNoRegistrar" class="btn btn-warning form-text">no, no quiero el descuento</button>
 
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /modal -->
+
+	
 
 
 
@@ -198,6 +164,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
 	<script src="js/index.js"></script>
+	<script>
+		mostrarModal()
+	</script>
 	
 </body>
 </html>
