@@ -181,3 +181,18 @@ input.form-control:focus {
 
 
 
+/*filtros*/
+
+#productos-container .list-group-item-action.active {
+	background-color: #7BDA3A;
+	border-color: #7BDA3A;
+	/*border-radius: 10px;*/
+}
+
+#productos-container .list-group {
+	margin-bottom:1em;
+}
+
+
+
+
