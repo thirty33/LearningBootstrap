@@ -193,6 +193,34 @@ input.form-control:focus {
 	margin-bottom:1em;
 }
 
+.card {
+	margin-bottom: .5em;
+}
 
+#paginator-container {
+	display: flex;
+	justify-content: center;
+}
 
+#paginator-container .page-item.active .page-link, .page-item.active .page-link:focus {
+	background-color: #7BDA3A;
+	border-color: #7BDA3A;
+	/*color: white;*/
+} 
+
+#paginator-container .page-item:not(.active):not(.disabled) .page-link{
+	color: #7BDA3A;
+
+}
+
+@media screen and (max-width: 768px){
+
+	.listado-productos {
+		margin-top: 1em;
+	}
+
+	.listado-productos .card-img-top {
+		width: 100%;
+	}
+}
 
