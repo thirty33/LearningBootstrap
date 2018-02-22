@@ -8,7 +8,8 @@ body {
 
 #header-container,
 #info-container {
-	background: #7BDA3A;
+	/* background: #7BDA3A; */
+	background: #99C84A;
 	color:white;
 }
 
@@ -45,6 +46,10 @@ body {
     flex-wrap: nowrap;
 
     
+}
+
+.carousel-inner {
+	margin-top: 80px;
 }
 
 /*.form input {
